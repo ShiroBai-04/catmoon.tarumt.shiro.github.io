@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Catmoon Kuala Lumpur</title>
+        <link rel="icon" type="images/catmoon.ico" href="/images/catmoon.ico">
+        <link rel="stylesheet" href="catmoonhome.css">
+    </head>
+    
+    <body>
+      
+      <a href="index.html">
+        <img src="images/catmoon.JPG" alt="Only logo" width="120" height="110">
+      </a>
+      <div class="navbar">
+        <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Menu
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="cafefood.html">Food</a>
+          <a href="cafedrink.html">Drink</a>
+          
+        </div>
+        </div> 
+        <a href="cafenews.html">News</a>
+        <a href="cafereward.html">Reward</a>
+        <a href="cafeabout.html">About us</a>
+      </div> 
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="images/poster1.jpg" style="width:100%" alt="poster1">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="images/poster2.jpg" style="width:100%" alt="poster2">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="images/poster4.JPG" style="width:100%" alt="poster4">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img src="images/poster5.jpg" style="width:100%" alt="poster5">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img src="images/poster6.jpg" style="width:100%" alt="poster6">
+        </div>
+        
+      <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(showSlides, 5000); // Change image every 5 seconds
+        }
+
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
+
+        <h2>PROMOS AND NEWS</h2> <div class="cafenews">
+            <a href="cafenews.html">SEE ALL ANNOUNCEMENTS</a>
+        </div>
+        <p style="font-family: verdana;font-size: 30px;">Love to enjoy, love the taste of coffee &#128049; </p>
+
+        <div class="pic-ctn">
+          <img src="images/poster4.png" alt="poster4" class="pic">
+          <img src="images/poster5.png" alt="poster5" class="pic">
+          <img src="images/poster6.png" alt="poster6" class="pic">
+          <img src="images/Celebrity_Chef.png" alt="chef" class="pic">
+          <img src="images/dUCK_X_CatMoon_Top_Banner.png" alt="dUCK" class="pic">
+        </div>
+
+        <div class="container">
+            <p class="display-4" style="width: 50%;font-family: verdana;font-size: 30px;">Pitch Your Idea</p>
+            <h2 class="lead">Join CatMoon Rewards for free. Start earning toward free rewards.</h2>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;border-radius: 50px;" class="login" >Login</button>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;border-radius: 50px;" class="register" >Register</button>
+
+            <div id="id01" class="modal">
+              
+              <form class="modal-content animate" action="#" method="post">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <img src="images/avatar.png" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+
+                  <label for="psw"><b>Password</b></label>
+                  <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
+                    
+                  <button type="submit">Login</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+
+                <div class="container" style="background-color:#fe5">
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+              </form>
+            </div>
+        </div>
+
+        <footer class="footer-distributed">
+
+          <div class="footer-left">
+    
+            <img src="images/avatar.png" alt="logo" width="150" height="150">
+    
+            <p class="footer-links">
+              <a href="index.html" class="link-1">Home</a>
+              
+              <a href="cafenews.html">News</a>
+            
+              <a href="cafereward.html">Reward</a>
+            
+              <a href="cafeabout.html">About Us</a>
+              
+      
+            </p>
+    
+            <p class="footer-catmoon">CatMoon © 2020</p>
+          </div>
+    
+          <div class="footer-center">
+    
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>Contact Number:&nbsp;+03-2208-1795</p>
+            </div>
+    
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p>Email:&nbsp;<a href="mailto:support@catmoon.com">support@catmoon.com</a></p>
+            </div>
+    
+            <div>
+              <i class="fa fa-map-marker1"></i>
+              <p><span>1-2, prima avenue, 3, Jln Cenuk 1</span> Bandar Puchong Jaya, 47170 Puchong, Selangor</p>
+            </div>
+    
+          </div>
+    
+          <div class="footer-right">
+    
+            <p class="footer-company-about">
+              <span>About the company</span>
+              Share great coffee with our friends and help make the world a little better.
+            </p>
+    
+            <div class="footer-icons">
+    
+              <a href="#">F<i class="facebook"></i></a>
+              <a href="#">T<i class="twitter"></i></a>
+    
+            </div>
+    
+          </div>
+    
+        </footer>
+    </body>
+
+</html>
